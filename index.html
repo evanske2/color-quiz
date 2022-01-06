@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <!-- How to play and start button -->
+        <div id="welcome">
+            <h1>Welcome to the color quiz!</h1>
+            <p>You will be shown a color swatch and it's up to you to select the correct color name from the options.</p>
+            <p>🌈 Good luck!</p>
+            <button id="begin-quiz">LET'S GO!</button>
+        </div>
+        
+        
+        <!-- The quiz -->
+        <div id="quiz" class="quizBlock invisible">
+        
+            <!-- This is where the swatch appears -->
+            <div class="color-swatch-container">
+                <div id="color-swatch">
+                    <img src="/assets/swatch01.jpg" alt="">
+                </div>
+                <div id="hex-color"></div>
+            </div>
+        
+            <!-- The question -->
+            <div id="question"></div>
+            <!-- The answer options -->
+            <div id="choices" class="multChoice">
+                <div class="choice" id="A" onclick="checkAnswer('A')">A</div>
+                <div class="choice" id="B" onclick="checkAnswer('B')">B</div>
+                <div class="choice" id="C" onclick="checkAnswer('C')">C</div>
+            </div>
+            <!-- Next question button -->
+            <button id="next-button" class="invisible">Next Question</button>
+        
+        
+        </div>
+    </div>
+    <footer><p class="copyright">Created at <a href="https://junocollege.com/" target="blank">Juno College</a></p></footer>
+    
+    <!-- <div id="quiz-score"></div> -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="color-quiz.js"></script>
+</body>
+</html>

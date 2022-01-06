@@ -1,0 +1,139 @@
+body {
+    font-family: 'PT Mono', monospace;
+    background-color: papayawhip;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.make-flex {
+    display: flex;
+}
+
+.right-answer {
+    background-color: darkseagreen;
+}
+
+.wrong-answer {
+    background-color: tomato;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+#welcome p {
+    max-width: 52ch;
+    margin: 10px auto;
+}
+
+#begin-quiz {
+    font-family: 'PT Mono', monospace;
+    border: 5px solid coral;
+    font-size: 18px;
+    border-radius: 2px;
+    background-color: lightsalmon;
+    padding: 10px 30px;
+    box-shadow: -4px 4px 0 indianred;
+    margin-top: 25px;
+    
+}
+
+#begin-quiz:hover,
+#begin-quiz:focus {
+    box-shadow: none;
+}
+
+.quizBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    position: absolute;
+    z-index: 0;
+}
+
+#color-swatch {
+    border-top: 20px solid white;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    border-bottom: 50px solid white;
+    width: 256px;
+    height: 256px;
+}
+
+.color-swatch-container {
+    position: relative;
+}
+
+#hex-color {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+#question {
+    font-size: 22px;
+    line-height: 1;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.multChoice {
+    display: flex;
+}
+
+.multChoice div {
+    padding: 0 20px;
+}
+
+.choice {
+    font-size: 18px;
+}
+
+.choice:hover,
+.choice:focus {
+    background-color: khaki;
+}
+
+#next-button {
+    font-family: 'PT Mono', monospace;
+    border: none;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: peachpuff;
+    padding: 4px 20px;
+    margin-top: 50px;
+    box-shadow: -2px 2px 0 indianred;
+}
+
+#next-button:hover,
+#next-button:focus {
+    box-shadow: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    right: 2%;
+    font-size: 12px;
+}
